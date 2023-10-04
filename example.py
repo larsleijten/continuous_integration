@@ -10,6 +10,6 @@ def subtract(a, b):
 def test_add(a, b, expected):
     assert add(a, b) == expected
 
-@pytest.mark.parametrize("a, b, expected", [(5, 2, 3),(0, -4, -4),(3, 10, -7)])
+@pytest.mark.parametrize("a, b, expected", [(5, 2, 3),(0, 4, -4),(3, 10, -7)])
 def test_subtract(a, b, expected):
     assert(subtract(a, b) == expected)
